@@ -44,7 +44,36 @@ az@az-virtual-machine:~$
 
 # Week 1
 节点，话题，服务，动作的相关概念及作用为
+
 <img width="784" height="1030" alt="image" src="https://github.com/user-attachments/assets/6e2341ac-a737-48b8-9b00-2dbb05dcd843" />
+
+
 以turtlesim为例，展示 ros 2 的节点列表
+
 <img width="1580" height="541" alt="屏幕截图 2026-06-11 172118" src="https://github.com/user-attachments/assets/fa8da80d-ee73-4b82-bf97-8ad2ae46d337" />
 
+
+用 rqt_graph 展示 ros2 主题列表
+
+<img width="2190" height="928" alt="image" src="https://github.com/user-attachments/assets/624d4c43-83d6-4952-a3a0-906a26923440" />
+
+
+查看主题发布的数据
+
+<img width="2066" height="1252" alt="image" src="https://github.com/user-attachments/assets/6e0a77d3-5276-4b31-a7d8-5de828d28800" />
+<img width="1332" height="652" alt="image" src="https://github.com/user-attachments/assets/2f05b6b4-f0c8-4c1b-82dc-3034c37d3187" />
+
+
+查看主题的详细信息：
+-发布者和订阅者的节点名称和命名空间
+-主题类型
+Qos 配置文件
+
+<img width="711" height="1130" alt="image" src="https://github.com/user-attachments/assets/5f4d0201-d760-48ec-9c5c-565e9efbd568" />
+
+
+ros2 接口显示
+
+<img width="782" height="328" alt="image" src="https://github.com/user-attachments/assets/0856c6f6-ecc0-4a7b-944e-8c46704a1e29" />
+
+由此了解消息期望的数据结构，这说明 /turtlesim 节点期望收到一个包含两个向量的消息，linear 这两个向量各有三个元素。
