@@ -38,3 +38,13 @@ az@az-virtual-machine:~$
 
 
 下一步我将学习 node，topic，service，action的相关概念，创建 ROS 2 工作空间和 Python 包，尝试写发布者和订阅者节点，建立 launch 文件，录制 rosbag，并用 rqt_graph 命令查看节点的连接关系。
+
+
+
+
+# Week 1
+节点，话题，服务，动作的相关概念及作用为
+<img width="784" height="1030" alt="image" src="https://github.com/user-attachments/assets/6e2341ac-a737-48b8-9b00-2dbb05dcd843" />
+以turtlesim为例，展示 ros 2 的节点列表
+<img width="1580" height="541" alt="屏幕截图 2026-06-11 172118" src="https://github.com/user-attachments/assets/fa8da80d-ee73-4b82-bf97-8ad2ae46d337" />
+
