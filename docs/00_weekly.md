@@ -77,3 +77,12 @@ ros2 接口显示
 <img width="782" height="328" alt="image" src="https://github.com/user-attachments/assets/0856c6f6-ecc0-4a7b-944e-8c46704a1e29" />
 
 由此了解消息期望的数据结构，这说明 /turtlesim 节点期望收到一个包含两个向量的消息，linear 这两个向量各有三个元素。
+
+
+ros2 主题发布
+
+<img width="2292" height="1242" alt="屏幕截图 2026-06-12 150654" src="https://github.com/user-attachments/assets/b355ebfc-218f-418a-b1fb-26d8654b283f" />
+
+以1 Hz 的频率稳定重复运行命令（画圆圈）--只想主题发布一次数据（而非持续发布）[在 pub 后添加 --once - w 2]（--once 是可选参数，代表“发布一条消息然后退出”；- w 2 也是可选参数，代表“等待两个匹配的订阅”，其中，2 代表同时订阅的 turtlesim 和 echo 两个主题）
+
+运行`$ ros2 topic echo /turtle1/pose`命令后，/turtlesim 节点也向 pose 发布数据到新的 echo 节点订阅的 pose 主题。
