@@ -82,7 +82,14 @@ ros2 接口显示
 ros2 主题发布
 
 <img width="2292" height="1242" alt="屏幕截图 2026-06-12 150654" src="https://github.com/user-attachments/assets/b355ebfc-218f-418a-b1fb-26d8654b283f" />
+<img width="2290" height="1250" alt="image" src="https://github.com/user-attachments/assets/d2f92100-4b38-4cbc-a37d-3508799aa19d" />
 
 不提供任何命令行选项，`ros2 topic pub`以1 Hz 的频率稳定地发布命令（画圆圈）--只想主题发布一次数据（而非持续发布）`$ ros2 topic pub --once -w 2 /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"}` [在 pub 后添加 --once - w 2]（--once 是可选参数，代表“发布一条消息然后退出”；- w 2 也是可选参数，代表“等待两个匹配的订阅”，其中，2 代表同时订阅的 turtlesim 和 echo 两个主题）
 
 运行`$ ros2 topic echo /turtle1/pose`命令后，/turtlesim 节点也向 pose 发布数据到新的 echo 节点订阅的 pose 主题。
+
+
+ros2 服务列表显示、类型显示、服务查找及服务调用（先使 turtle 运动，再清除其绘制的所有线条；通过调用`/sqawn`并设置参数来生成一个新的 turtle）
+
+<img width="2289" height="1249" alt="屏幕截图 2026-06-12 184326" src="https://github.com/user-attachments/assets/56b291f1-087a-4b1b-8ecf-54663365ff00" />
+
