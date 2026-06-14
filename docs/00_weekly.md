@@ -113,5 +113,12 @@ ros2 查看节点信息、动作列表、动作类型、动作信息、接口显
 
 
 launch 文件
+
 <img width="781" height="810" alt="image" src="https://github.com/user-attachments/assets/3f17b6e9-71be-4ae6-8a0a-df5d971990e5" />
 <img width="1364" height="850" alt="image" src="https://github.com/user-attachments/assets/9279dda0-195e-4456-a201-94d521310e30" />
+
+
+ros2 bag
+
+<img width="771" height="1188" alt="image" src="https://github.com/user-attachments/assets/8e09012e-7955-4466-89fa-9145acec55b2" />
+<img width="2290" height="1248" alt="image" src="https://github.com/user-attachments/assets/9314a812-981f-42f3-b550-8783cc0b548e" />
