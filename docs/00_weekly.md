@@ -104,3 +104,14 @@ ros2 查看节点信息、动作列表、动作类型、动作信息、接口显
 
 <img width="2286" height="1188" alt="屏幕截图 2026-06-14 115941" src="https://github.com/user-attachments/assets/88b32bad-10ce-4d97-9d0b-ded2c0144aec" />
 
+
+用 rqt_console 查看日志，并进行相关设置
+
+<img width="1198" height="1195" alt="image" src="https://github.com/user-attachments/assets/16c42aae-c00c-43e7-b385-a8b3ddae87e8" />
+<img width="2296" height="820" alt="image" src="https://github.com/user-attachments/assets/18c86706-301e-4789-babd-efcc365e694c" />
+<img width="2292" height="822" alt="image" src="https://github.com/user-attachments/assets/c8ec29ff-d111-4ec7-98b4-a8bb9cc56c35" />
+
+
+launch 文件
+<img width="781" height="810" alt="image" src="https://github.com/user-attachments/assets/3f17b6e9-71be-4ae6-8a0a-df5d971990e5" />
+<img width="1364" height="850" alt="image" src="https://github.com/user-attachments/assets/9279dda0-195e-4456-a201-94d521310e30" />
