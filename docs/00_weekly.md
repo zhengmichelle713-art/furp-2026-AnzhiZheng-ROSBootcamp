@@ -93,3 +93,8 @@ ros2 服务列表显示、类型显示、服务查找及服务调用（先使 tu
 
 <img width="2289" height="1249" alt="屏幕截图 2026-06-12 184326" src="https://github.com/user-attachments/assets/56b291f1-087a-4b1b-8ecf-54663365ff00" />
 
+
+ros2 查看节点信息、动作列表、动作类型、动作信息、接口显示，以及发送操作目标、查看此目标的反馈
+
+<img width="2286" height="1188" alt="屏幕截图 2026-06-14 115941" src="https://github.com/user-attachments/assets/88b32bad-10ce-4d97-9d0b-ded2c0144aec" />
+
