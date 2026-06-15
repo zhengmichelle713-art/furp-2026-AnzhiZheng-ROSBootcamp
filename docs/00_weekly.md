@@ -152,3 +152,14 @@ ros2 bag
 通过命令构建好的目录
 
 <img width="722" height="896" alt="image" src="https://github.com/user-attachments/assets/7ab0b0e8-7f3d-4257-af7e-448309d7e74e" />
+
+
+创建工作区
+source ROS2 环境 -- 创建新目录 -- 克隆示例仓库 -- 解决依赖关系 -- 使用 colcon 构建工作区 -- 获取叠加层 -- 修改叠加层
+
+<img width="1330" height="1214" alt="image" src="https://github.com/user-attachments/assets/f7f4aa1a-fd07-4db4-8ec1-b62a108e72db" />
+<img width="1747" height="1181" alt="image" src="https://github.com/user-attachments/assets/5adfc550-ed15-4388-a300-5070f783c222" />
+<img width="975" height="1183" alt="image" src="https://github.com/user-attachments/assets/24b90b71-b28e-41d9-bd9d-36711a0205b4" />
+<img width="2276" height="1248" alt="image" src="https://github.com/user-attachments/assets/22cda03c-39ca-4164-baea-d5ed17637cac" />
+<img width="896" height="746" alt="屏幕截图 2026-06-15 173858" src="https://github.com/user-attachments/assets/077df088-638f-443a-943c-05594eade0e7" />
+
