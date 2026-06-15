@@ -122,3 +122,33 @@ ros2 bag
 
 <img width="771" height="1188" alt="image" src="https://github.com/user-attachments/assets/8e09012e-7955-4466-89fa-9145acec55b2" />
 <img width="2290" height="1248" alt="image" src="https://github.com/user-attachments/assets/9314a812-981f-42f3-b550-8783cc0b548e" />
+
+
+用 colcon 构建软件包
+
+<img width="1228" height="1232" alt="image" src="https://github.com/user-attachments/assets/9d11ccf8-f628-43f0-b887-6c7f625cd5e8" />
+<img width="1852" height="1219" alt="image" src="https://github.com/user-attachments/assets/d8ae6dd0-67d2-4c14-8895-86e0b34d1895" />
+<img width="1723" height="1229" alt="image" src="https://github.com/user-attachments/assets/aa5b0b17-3121-4932-9d64-320cac9b1a58" />
+
+
+安装 colcon -- 创建工作区 -- 添加一些 source -- 构建工作区
+
+<img width="2292" height="1206" alt="image" src="https://github.com/user-attachments/assets/281b3502-b4f4-42cc-950e-6a1b55478b6e" />
+
+运行测试
+
+<img width="2294" height="1204" alt="image" src="https://github.com/user-attachments/assets/655d7fec-af45-4670-aa6b-c2db6902e9da" />
+<img width="2290" height="1248" alt="image" src="https://github.com/user-attachments/assets/1cf4c163-22d3-42b2-97d5-d431985201cc" />
+<img width="2294" height="700" alt="image" src="https://github.com/user-attachments/assets/41360dd8-3800-4235-af9e-c554222e20f3" />
+
+环境来源 -- 试用演示版
+
+<img width="1536" height="486" alt="image" src="https://github.com/user-attachments/assets/21a244d6-3b5d-4504-b3f7-170f6c92fc9a" />
+
+设置 colcon_cd
+
+<img width="932" height="164" alt="image" src="https://github.com/user-attachments/assets/afd8a2cd-e362-4d3a-b367-62985eb45846" />
+
+通过命令构建好的目录
+
+<img width="722" height="896" alt="image" src="https://github.com/user-attachments/assets/7ab0b0e8-7f3d-4257-af7e-448309d7e74e" />
