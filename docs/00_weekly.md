@@ -108,6 +108,7 @@ ros2 查看节点信息、动作列表、动作类型、动作信息、接口显
 查看参数列表、获取参数、在参数集中更改参数值、参数转储、参数加载以及节点启动时加载参数文件
 
 <img width="1910" height="1050" alt="image" src="https://github.com/user-attachments/assets/02415852-2402-4068-9a5f-f6c8e196175a" />
+<img width="912" height="756" alt="image" src="https://github.com/user-attachments/assets/6e06699a-2bba-46a2-aa20-4c12551734eb" />
 
 
 用 rqt_console 查看日志，并进行相关设置
