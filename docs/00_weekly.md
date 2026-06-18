@@ -43,10 +43,10 @@ az@az-virtual-machine:~$
 
 
 # Week 1
-节点，话题，服务，动作的相关概念及作用为
+节点，话题，服务，动作，参数的相关概念及作用为
 
 <img width="784" height="1030" alt="image" src="https://github.com/user-attachments/assets/6e2341ac-a737-48b8-9b00-2dbb05dcd843" />
-
+<img width="1010" height="921" alt="image" src="https://github.com/user-attachments/assets/8e970268-5185-4146-8a84-65b560a61b5b" />
 <img width="1030" height="1194" alt="image" src="https://github.com/user-attachments/assets/cb414804-8674-4056-a493-671617ace546" />
 <img width="1028" height="1247" alt="image" src="https://github.com/user-attachments/assets/269ce257-db82-4e9b-abdd-36417adfa411" />
 <img width="1122" height="1128" alt="image" src="https://github.com/user-attachments/assets/f0375ee7-587c-4f3e-b117-328820ccd1f8" />
@@ -103,6 +103,11 @@ ros2 服务列表显示、类型显示、服务查找及服务调用（先使 tu
 ros2 查看节点信息、动作列表、动作类型、动作信息、接口显示，以及发送操作目标、查看此目标的反馈
 
 <img width="2286" height="1188" alt="屏幕截图 2026-06-14 115941" src="https://github.com/user-attachments/assets/88b32bad-10ce-4d97-9d0b-ded2c0144aec" />
+
+
+查看参数列表、获取参数、在参数集中更改参数值、参数转储、参数加载以及节点启动时加载参数文件
+
+<img width="1910" height="1050" alt="image" src="https://github.com/user-attachments/assets/02415852-2402-4068-9a5f-f6c8e196175a" />
 
 
 用 rqt_console 查看日志，并进行相关设置
