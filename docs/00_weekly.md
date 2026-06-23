@@ -270,3 +270,27 @@ For example：
 不管是真是小车的控制器，还是 Gazebo 虚拟小车插件，收到`/cmd_vel`之后，会自动运行差速逆运动学公式，换算出左轮、右轮各自该转多快，再控制轮子
 
 
+robot link 与 joint
+1. link（连杆）：机器人身上硬的、不会变形的零件，一块硬壳、一个轮子、底座、雷达支架，相    当于人的胳膊、大腿
+   - 差速小车
+     base_link （车身底盘）、left_wheel（左轮子）、right_wheel（右轮子），每一样单独      都是一个 link
+     连杆本身不能动，是固定硬块
+2. joint（关节）：把两个连杆连在一起、能活动的连接部位，就是关节，相当于人的肩膀、膝盖
+   关节规定两个连杆之间能怎么动
+   - 差速小车
+     left_wheel_joint: 连接车身 base_link 和左轮 left_wheel
+     right_wheel_joint: 连接车身 base_link 和右轮 roght_wheel
+     只有这两个能动的关节专门用来驱动轮子转动
+     差速小车的轮子关节是旋转关节：车身底盘和轮子中间的转轴，轮子能绕轴转圈
+     
+与差速运动学、ROS2 的关系
+1. 在 URDF 机器人模型文件里，写清楚 link、joint 位置
+   电脑能自动算出左右两个轮子相隔多远 L、轮子半径多大 r
+   差速运动学计算也需要用到以上数据
+2. ROS2 差速控制器（diff_drive_controller）依靠 joint 名称识别驱动轮
+   eg.: 配置文件里写 left_wheel_names: ["left_wheel_joint"], 程序才知控制哪两个转轴
+3. Gazebo 虚拟小车读取 joint，模拟轮子转动
+   收到`/cmd_vel`速度指令，算出左右轮转速，直接控制这两个关节旋转，画面里的轮子就会转，    小车前进拐弯  
+
+
+   
