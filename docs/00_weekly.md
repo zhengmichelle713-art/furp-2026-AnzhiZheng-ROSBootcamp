@@ -436,3 +436,38 @@ laser_link 激光雷达坐标系（雷达自己的原点）
 
 imu_link 惯性传感器坐标系（陀螺仪 / 加速度计原点）
 作用：IMU 输出车身倾斜、旋转角速度，所有数据以 imu_link 为原点，用来辅助修正里程计漂移
+
+
+
+# Week3
+MuJoCo 仿真环境
+仿真节点功能
+   - 加载机器人模型
+   - 接收`/cmd_vel`速度指令（Twist 消息，线速度 x、角速度 z）驱动底盘
+   - 输出传感器数据：`/scan`激光雷达、`/odom`里程计
+   - 发布 TF 树：`map(无，SLAM生成) ← odom(里程计坐标系) ← base_link(机器人底盘中心)      ← lidar_link(激光雷达安装位置)`
+   - 发布仿真时钟`/clock`，仿真时间核心
+
+ROS工具包相关命令：  
+- `teleop_twist_keyboard`: 键盘遥控，持续发布`/cmd_vel`控制机器人漫游建图
+- `nav2-map-server`:	提供`map_saver_cli`，保存建图结果为 pgm 栅格图 + yaml 地图配     置文件
+- `tf2_tools`: `view_frames`可视化 TF 坐标系树，排查坐标变换断层问题
+- `use_sim_time:=true`:
+   SLAM、RViz、所有依赖传感器时序的节点必须开启仿真时间，否则
+   1. 激光雷达数据、TF 变换时间戳不匹配
+   2. SLAM 无法匹配激光扫描，地图完全不更新、飘移严重
+   3. RViz 操作：Global Options 勾选`Use Sim Time`，Fixed Frame 固定设为`map`           （SLAM输出全局坐标系）。
+- `ros2 run tf2_tools view_frames`：生成 pdf 坐标系树，快速判断是否存在变换断层
+- `ros2 topic list`：查看所有话题，确认 /scan、/odom、/clock、/map 存在
+- `ros2 topic echo /scan`：打印激光雷达原始数据，验证雷达正常输出
+- `ros2 topic echo /odom`：查看里程计位姿、速度是否随机器人运动变化
+- `ros2 topic echo /clock`：验证仿真时钟正常发布（无输出则 sim_time 失效）
+- `ros2 pkg list | grep xxx`：检查功能包是否正确安装、编译成功
+
+SLAM 工作流程:
+1. 订阅`/scan`激光雷达数据、`/odom`里程计、读取 TF 底盘 - 激光变换；
+2. 扫描匹配：激光点云和历史地图匹配，修正里程计漂移；
+3. 回环检测：机器人回到历史区域时校正全局位姿，消除长时间累积漂移；
+4. 实时生成`/map`占据栅格地图 OccupancyGrid；
+5. 输出`map → odom`坐标变换，建立全局世界坐标系
+
