@@ -479,3 +479,33 @@ SLAM 工作流程:
 3. 保存的地图文件（`.pgm` 与 `.yaml`）
    <img width="671" height="440" alt="image" src="https://github.com/user-attachments/assets/57341e98-3920-4d2b-be62-c5b5a4a855d8" />
    <img width="730" height="197" alt="image" src="https://github.com/user-attachments/assets/3a541dfc-58a9-4441-b1ad-41069450f9e3" />
+4. 参数选择、遇到的问题和解决方法
+   - 参数选择
+     base_frame: "base_link"
+     odom_frame: "odom"
+     map_frame: "map"
+     TF 树固定链路：`map → odom → base_link → lidar_link`
+     
+     scan_topic: "/scan"           Mujoco 仿真发布激光话题固定名称
+     min_laser_range: 0.1          过滤雷达自身近处盲区，0.1 米内无效点会干扰匹配
+     max_laser_range: 12.0         迷宫房间最大宽度远小于 12m，完整保留全部墙体数                                       据；太小会丢失远处墙壁，匹配约束变少，漂移加重
+                        
+     
+     resolution: 0.05              代表每一格栅格 = 5 厘米 = 0.05 米
+                                   0.05 是平衡精度和内存的最优值：更小（0.025）地                                      图文件巨大、卡顿；更大（0.1）墙体模糊，匹配不准                                      漂移
+     
+     mode: "mapping"               在线实时建图模式，刷图专用
+     
+     loop_closure_enable: true     走完闭环路线后自动修正里程计累积漂移，把跑偏的                                       地图拉回原位；关闭则漂移只会越来越严重
+     
+     loop_search_max_dist: 5.0     机器人在 5 米范围内搜索曾经走过的区域做回环匹                                        配；迷宫尺寸不大，5 米能保证频繁触发校正；数值                                       太大计算卡顿，太小很难找到闭环
+     
+     scan_matcher_type: "PLICP"    针对激光雷达优化的 ICP 匹配算法，比传统 ICP 抗                                      噪声更强，仿真激光抖动环境下匹配更稳，减少漂移
+     minimum_travel_distance: 0.1  小车至少前进 0.1 米才执行一次地图更新
+     minimum_travel_rotation: 0.1  小车至少旋转 0.1 弧度才更新地图
+     
+     map_update_interval: 1.0      每 1 秒全局刷新一次栅格地图，平衡流畅度与计算压力
+     transform_timeout: 0.2        SLAM 等待 TF 坐标变换的最长时间 0.2 秒；仿真传感                                    器数据存在微小延迟，给 0.2 秒容错，不会因为时间差                                    丢失变换导致匹配失败
+   - 遇到的问题
+   - 解决方法
+     
