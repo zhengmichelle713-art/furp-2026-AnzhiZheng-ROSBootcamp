@@ -471,3 +471,11 @@ SLAM 工作流程:
 4. 实时生成`/map`占据栅格地图 OccupancyGrid；
 5. 输出`map → odom`坐标变换，建立全局世界坐标系
 
+作业
+1. 修改后的 SLAM Toolbox 参数文件
+   <img width="726" height="572" alt="屏幕截图 2026-06-28 202230" src="https://github.com/user-attachments/assets/14944e08-7924-46d8-8442-b5384dcca41b" />
+2. 建图运行截图
+   <img width="2298" height="1300" alt="屏幕截图 2026-07-01 141730" src="https://github.com/user-attachments/assets/4869ef3e-672e-4f31-9b06-ed768f596969" />
+3. 保存的地图文件（`.pgm` 与 `.yaml`）
+   <img width="671" height="440" alt="image" src="https://github.com/user-attachments/assets/57341e98-3920-4d2b-be62-c5b5a4a855d8" />
+   <img width="730" height="197" alt="image" src="https://github.com/user-attachments/assets/3a541dfc-58a9-4441-b1ad-41069450f9e3" />
