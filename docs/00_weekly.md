@@ -439,7 +439,6 @@ imu_link 惯性传感器坐标系（陀螺仪 / 加速度计原点）
 
 
 
-# Week3
 MuJoCo 仿真环境
 仿真节点功能
    - 加载机器人模型
@@ -508,4 +507,13 @@ SLAM 工作流程:
      transform_timeout: 0.2        SLAM 等待 TF 坐标变换的最长时间 0.2 秒；仿真传感                                    器数据存在微小延迟，给 0.2 秒容错，不会因为时间差                                    丢失变换导致匹配失败
    - 遇到的问题
    - 解决方法
-     
+
+
+# Week 3
+作业
+<img width="448" height="145" alt="image" src="https://github.com/user-attachments/assets/1849502f-c6f9-4ef3-a2da-3963fd3f580b" />
+<img width="2305" height="1241" alt="屏幕截图 2026-07-05 191727" src="https://github.com/user-attachments/assets/1fe57a67-92d9-4964-8629-76b8e0406dba" />
+<img width="2298" height="1199" alt="屏幕截图 2026-07-05 194157" src="https://github.com/user-attachments/assets/082a8fd8-4ba0-4e46-83cc-99b5263c514c" />
+<img width="2199" height="483" alt="屏幕截图 2026-07-05 201211" src="https://github.com/user-attachments/assets/f14c7b78-a16d-4c1d-9ba3-24cc57a0e529" />
+<img width="2289" height="1101" alt="屏幕截图 2026-07-05 201325" src="https://github.com/user-attachments/assets/014414c5-67b7-45e2-804f-79ce76195d9d" />
+<img width="2290" height="1252" alt="屏幕截图 2026-07-05 200559" src="https://github.com/user-attachments/assets/63785d45-17c3-4848-9ff0-eace87b7667a" />
