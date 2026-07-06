@@ -521,3 +521,6 @@ SLAM 工作流程:
 第二次尝试
 <img width="2287" height="1247" alt="屏幕截图 2026-07-06 140204" src="https://github.com/user-attachments/assets/15f609a3-f976-418c-b3bd-406deeb2d3a4" />
 <img width="1898" height="983" alt="image" src="https://github.com/user-attachments/assets/4ca12515-64df-4af8-87da-f19d4b699433" />
+录制的rosbag
+<img width="1591" height="619" alt="屏幕截图 2026-07-06 205258" src="https://github.com/user-attachments/assets/9920acbe-244d-4de1-ab0f-d5893a149eaa" />
+<img width="1789" height="999" alt="屏幕截图 2026-07-06 205345" src="https://github.com/user-attachments/assets/e715e498-9ec9-41e5-a0dd-8aa9f9d6a702" />
