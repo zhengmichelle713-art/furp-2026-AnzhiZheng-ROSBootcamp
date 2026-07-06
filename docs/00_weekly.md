@@ -518,3 +518,6 @@ SLAM 工作流程:
 <img width="2289" height="1101" alt="屏幕截图 2026-07-05 201325" src="https://github.com/user-attachments/assets/014414c5-67b7-45e2-804f-79ce76195d9d" />
 <img width="2290" height="1252" alt="屏幕截图 2026-07-05 200559" src="https://github.com/user-attachments/assets/63785d45-17c3-4848-9ff0-eace87b7667a" />
 <img width="1605" height="595" alt="image" src="https://github.com/user-attachments/assets/de27aa7b-0204-478f-936e-4836d67c68ec" />
+第二次尝试
+<img width="2287" height="1247" alt="屏幕截图 2026-07-06 140204" src="https://github.com/user-attachments/assets/15f609a3-f976-418c-b3bd-406deeb2d3a4" />
+<img width="1898" height="983" alt="image" src="https://github.com/user-attachments/assets/4ca12515-64df-4af8-87da-f19d4b699433" />
