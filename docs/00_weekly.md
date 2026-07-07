@@ -524,3 +524,7 @@ SLAM 工作流程:
 录制的rosbag
 <img width="1591" height="619" alt="屏幕截图 2026-07-06 205258" src="https://github.com/user-attachments/assets/9920acbe-244d-4de1-ab0f-d5893a149eaa" />
 <img width="1789" height="999" alt="屏幕截图 2026-07-06 205345" src="https://github.com/user-attachments/assets/e715e498-9ec9-41e5-a0dd-8aa9f9d6a702" />
+打分的新节点
+<img width="851" height="746" alt="image" src="https://github.com/user-attachments/assets/8c8bd3f1-5925-4e56-a68a-c10e0ae39eae" />
+
+<img width="2212" height="482" alt="image" src="https://github.com/user-attachments/assets/2d44d948-944d-4dc5-9b43-0932a9249ede" />
