@@ -526,5 +526,8 @@ SLAM 工作流程:
 <img width="1789" height="999" alt="屏幕截图 2026-07-06 205345" src="https://github.com/user-attachments/assets/e715e498-9ec9-41e5-a0dd-8aa9f9d6a702" />
 打分的新节点
 <img width="851" height="746" alt="image" src="https://github.com/user-attachments/assets/8c8bd3f1-5925-4e56-a68a-c10e0ae39eae" />
-
 <img width="2212" height="482" alt="image" src="https://github.com/user-attachments/assets/2d44d948-944d-4dc5-9b43-0932a9249ede" />
+只做可视化的新节点
+<img width="1368" height="1086" alt="image" src="https://github.com/user-attachments/assets/8c512b33-43bc-4348-b570-5771a5ca267a" />
+<img width="844" height="934" alt="image" src="https://github.com/user-attachments/assets/0a828f3d-431a-4c0c-8b1b-1df75ba62cc0" />
+<img width="2282" height="1264" alt="image" src="https://github.com/user-attachments/assets/f93016a4-75e0-439a-887d-b25b4a6ddf6a" />
