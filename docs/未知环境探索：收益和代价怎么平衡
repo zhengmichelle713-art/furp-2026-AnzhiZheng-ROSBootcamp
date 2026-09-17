@@ -102,7 +102,7 @@ Score = α · Gain − β · TravelCost
 
 ### 5.1 节点架构
 
-FOV 节点是一个**独立的 ROS2 模块**：
+FOV 节点是一个独立的 ROS2 模块：
 
 - 订阅 `/map` （ `nav_msgs/msg/OccupancyGrid` ）；
 - 计算最优 frontier（基于 FOV 增益和移动代价）；
@@ -110,3 +110,28 @@ FOV 节点是一个**独立的 ROS2 模块**：
 - 发布 `/exploration/selected_goal` （ `visualization_msgs/msg/Marker` ）用于可视化目标点；
 - 调用 `/navigate_to_pose` （ `nav2_msgs/action/NavigateToPose` ）向 Nav2 发送目标；
 - 不修改 Nav2 核心代码，保证模块化和可插拔性。
+
+### 5.2 计算图
+ROS2 计算图，显示 `explorer_fov` 节点及其活动连接。
+从 `navigate_to_pose` 到 `explorer_fov` 的 feedback/status 链路确认了 action client-server 连接成功。
+由于 ROS2 action 通信中 goal 请求是瞬态的，发送目标的方向在此截图中不可见；命令行工具 `ros2 node info` 已确认 Action client 注册
+
+### 5.3 节点接口与 Action 验证
+`ros2 node info /explorer_fov` 输出，确认订阅 `/map`、发布 `/exploration/fov_rays` 和 `/exploration/selected_goal`，并注册为 `NavigateToPose` action client。
+`ros2 action info /navigate_to_pose` 输出，确认 `/explorer_fov` 已注册为 action client。
+
+### 5.4 关键参数配置
+```
+FOV parameters:
+  - Field of view: 240°
+  - Maximum range: 5.0 m
+  - Ray count: 36
+  - α (gain weight): 1.0
+  - β (cost weight): 0.5
+```
+
+### 6. 结论
+- FOV-based goal selection 相比 Greedy distance-only，总路径减少 42%。
+  这说明同时考虑信息增益和移动代价，能显著减少无效折返，把路程集中在信息量大的区域。
+- 探索时间减少 43%，同时地图覆盖率几乎相同。
+  这说明 FOV 算法在提高效率的同时，没有牺牲建图完整性，探索任务完成质量与 Greedy 相当。
