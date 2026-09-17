@@ -56,7 +56,7 @@ Conventional frontier-based exploration 通过最小化移动距离来选择目�
 | TurtleBot3 Waffle | 差分驱动移动机器人，搭载 2D 激光雷达 |
 | SLAM Toolbox | 实时建图，发布 `/map` 和 `map→odom` TF |
 | Nav2 | 导航栈，接收 `NavigateToPose` action 目标并执行路径规划与控制 |
-| FOV 节点 | 本工作提出的探索决策节点，独立运行，不修改 Nav2 核心 |
+| FOV 节点 | 本研究提出的探索决策节点，独立运行，不修改 Nav2 核心 |
 
 ### 3.2 两种策略对比
 | 策略 | 描述 |
@@ -83,6 +83,9 @@ Score = α · Gain − β · TravelCost
 ## 4. 研究结果
 
 ### 4.1 在线部署最终结果
+
+
+
 
 | 指标 | Greedy | FOV (本方法) | 改进 |
 | :--- | :--- | :--- | :--- |
